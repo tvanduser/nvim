@@ -4,7 +4,6 @@ return{
 		-- or                              , branch = '0.1.x',
 		dependencies = { 'nvim-lua/plenary.nvim' },
 		config = function()
-			print("telescope is working!")
 		end
 	}
 }

@@ -1,6 +1,7 @@
 require("turner.lazy")
 require("turner")
 print("Hello Turner!")
+require("plugins.lsp")
 --treesitter
 require("lazy").setup({{
     "nvim-treesitter/nvim-treesitter",

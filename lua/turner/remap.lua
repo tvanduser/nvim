@@ -21,3 +21,8 @@ vim.keymap.set('n', '<space>c', ':lclose<CR>', { noremap = true, silent = true, 
 --['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
 --['<C-y>'] = cmp.mapping.confirm({ select = true }),
 --["<C-Space>"] = cmp.mapping.complete(),
+
+
+--keybinds for working with the terminal
+vim.keymap.set('n', '<leader>st', ':vsplit | terminal<CR>', {noremap = true, silent = true}) --opens up a split terminal using SpaceST "split termial ST"
+vim.keymap.set('n', '<leader>bt', ':botright split | resize 10 | terminal<CR>', { noremap = true, silent = true })

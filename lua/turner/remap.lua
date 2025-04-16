@@ -26,3 +26,8 @@ vim.keymap.set('n', '<space>c', ':lclose<CR>', { noremap = true, silent = true, 
 --keybinds for working with the terminal
 vim.keymap.set('n', '<leader>st', ':vsplit | terminal<CR>', {noremap = true, silent = true}) --opens up a split terminal using SpaceST "split termial ST"
 vim.keymap.set('n', '<leader>bt', ':botright split | resize 10 | terminal<CR>', { noremap = true, silent = true })
+
+--remap for working with splits
+vim.keymap.set('n', '<leader>sp', ':vs<CR>'); --creates a duplicate of the current window and splits the screen in half
+vim.keymap.set('n', '<leader>wl', '<C-w>h')
+vim.keymap.set('n', '<leader>wr', '<C-w>l')

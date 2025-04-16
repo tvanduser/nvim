@@ -29,5 +29,8 @@ vim.keymap.set('n', '<leader>bt', ':botright split | resize 10 | terminal<CR>', 
 
 --remap for working with splits
 vim.keymap.set('n', '<leader>sp', ':vs<CR>'); --creates a duplicate of the current window and splits the screen in half
-vim.keymap.set('n', '<leader>wl', '<C-w>h') --moves to the left window
-vim.keymap.set('n', '<leader>wr', '<C-w>l') --moves to the right window
+vim.keymap.set('n', '<leader>wh', '<C-w>h') --moves to the left window
+vim.keymap.set('n', '<leader>wl', '<C-w>l') --moves to the right window
+vim.keymap.set('n', '<leader>wk', '<C-w>k') --moves to the above window
+vim.keymap.set('n', '<leader>wj', '<C-w>j') --moves to the below window
+

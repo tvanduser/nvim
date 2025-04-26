@@ -21,6 +21,7 @@ return {
                 c = { "clang-format" },
                 cpp = { "clang-format" },
                 lua = { "stylua" },
+                java = { "jdtls"},
             }
         })
 
@@ -65,6 +66,7 @@ return {
                 "clangd",
                 "lua_ls",
                 "harper_ls",
+                "jdtls",
             },
             handlers = {
                 function(server_name) -- default handler

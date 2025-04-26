@@ -30,7 +30,24 @@ vim.keymap.set('n', '<leader>bt', ':botright split | resize 10 | terminal<CR>', 
 --remap for working with splits
 vim.keymap.set('n', '<leader>sp', ':vs<CR>'); --creates a duplicate of the current window and splits the screen in half
 vim.keymap.set('n', '<leader>wh', '<C-w>h') --moves to the left window
-vim.keymap.set('n', '<leader>wl', '<C-w>l') --moves to the right window
+vim.keymap.set('n', '<leader>wl', '<C-w>l') --moves to the right window (doens't work for some reason)
 vim.keymap.set('n', '<leader>wk', '<C-w>k') --moves to the above window
 vim.keymap.set('n', '<leader>wj', '<C-w>j') --moves to the below window
 
+--remap for harpoon
+
+local harpoon = require("harpoon")
+local map = vim.keymap.set
+map("n", "<leader>A", function() harpoon:list():prepend() end)
+map("n", "<leader>a", function() harpoon:list():add() end)
+map("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end) --opens up the menu for harpoon 
+
+map("n", "<leader>1", function() harpoon:list():select(1) end)
+map("n", "<leader>2", function() harpoon:list():select(2) end)
+map("n", "<leader>3", function() harpoon:list():select(3) end)
+map("n", "<leader>4", function() harpoon:list():select(4) end)
+
+map("n", "<leader><C-1>", function() harpoon:list():replace_at(1) end)
+map("n", "<leader><C-2>", function() harpoon:list():replace_at(2) end)
+map("n", "<leader><C-3>", function() harpoon:list():replace_at(3) end)
+map("n", "<leader><C-4>", function() harpoon:list():replace_at(4) end)

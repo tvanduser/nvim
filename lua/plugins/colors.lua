@@ -1,5 +1,5 @@
 -- Pick your preferred theme here
-local colorscheme = "catppuccin" -- options: "gruvbox", "tokyonight", "onedark", etc.
+local colorscheme = "tokyonight" -- options: "gruvbox", "tokyonight", "onedark", etc.
 
 return {
   -- Catppuccin

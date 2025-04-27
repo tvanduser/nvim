@@ -9,4 +9,6 @@ anything other than the vim default shortcuts are in remaps.lua
 !there are some in lsp.lua for when it comes to using the autocompleted suggestions
 
 **In Progress**
-I am currently working on a way for there to be easy terminal integration since I need to run things like gcc so much 
+currently have a bug saying that I can't resource my config since i am requiring it in two places
+
+eventually I want to make the startup a little better

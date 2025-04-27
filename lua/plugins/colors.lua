@@ -1,5 +1,5 @@
 -- Pick your preferred theme here
-local colorscheme = "everforest" -- options: "gruvbox", "tokyonight", "onedark", "catppuccin", "nord", "kanagawa", "rose-pine", "everforest", "nightfox", "oxocarbon"
+local colorscheme = "tokyonight" -- options: "gruvbox", "tokyonight", "onedark", "catppuccin", "nord", "kanagawa", "rose-pine", "everforest", "nightfox", "oxocarbon"
 
 return {
     -- Catppuccin

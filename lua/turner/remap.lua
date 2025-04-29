@@ -48,11 +48,11 @@ map("n", "<leader>3", function() harpoon:list():select(3) end)
 map("n", "<leader>4", function() harpoon:list():select(4) end)
 map("n", "<leader>5", function() harpoon:list():select(5) end)
 
-map("n", "<leader><C-1>", function() harpoon:list():replace_at(1) end)
-map("n", "<leader><C-2>", function() harpoon:list():replace_at(2) end)
-map("n", "<leader><C-3>", function() harpoon:list():replace_at(3) end)
-map("n", "<leader><C-4>", function() harpoon:list():replace_at(4) end)
-map("n", "<leader><C-5>", function() harpoon:list():replace_at(5) end)
+map("n", "<leader>r1", function() harpoon:list():replace_at(1) end)
+map("n", "<leader>r2", function() harpoon:list():replace_at(2) end)
+map("n", "<leader>r3", function() harpoon:list():replace_at(3) end)
+map("n", "<leader>r4", function() harpoon:list():replace_at(4) end)
+map("n", "<leader>r5", function() harpoon:list():replace_at(5) end)
 
 --remaps for going back after doing something like gd using lsp
 vim.keymap.set("n", "<leader>b", "<C-o>", { desc = "Go back from LSP jump" })

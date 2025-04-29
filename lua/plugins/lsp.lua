@@ -49,24 +49,20 @@ return {
             end, bufopts)
             vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, bufopts)
             vim.keymap.set('n', '<space>rn', vim.lsp.buf.rename, bufopts)
-            vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts)
-            vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
-            vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
-        end
-
-        -- Set up LSP status indicator
-        require("fidget").setup({})
+            vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, bufopts) vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts) vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts) end -- Set up LSP status indicator require("fidget").setup({})
         
         -- Set up Mason package manager for LSP servers
         require("mason").setup()
         
         -- Configure Mason LSP servers
+        -- ****** PUT THE NEW LANGUAGES SERVERS INSTALLED WITH MASON HERE *************
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "clangd",
                 "lua_ls",
                 "harper_ls",
                 "jdtls",
+                "pyright",
             },
             handlers = {
                 function(server_name) -- default handler

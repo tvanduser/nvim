@@ -53,3 +53,7 @@ map("n", "<leader><C-2>", function() harpoon:list():replace_at(2) end)
 map("n", "<leader><C-3>", function() harpoon:list():replace_at(3) end)
 map("n", "<leader><C-4>", function() harpoon:list():replace_at(4) end)
 map("n", "<leader><C-5>", function() harpoon:list():replace_at(5) end)
+
+--remaps for going back after doing something like gd using lsp
+vim.keymap.set("n", "<leader>b", "<C-o>", { desc = "Go back from LSP jump" })
+

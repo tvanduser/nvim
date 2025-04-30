@@ -13,7 +13,7 @@ require("lazy").setup({
       configs.setup({
         ensure_installed = {
           "c", "lua", "vim", "vimdoc", "query",
-          "elixir", "heex", "javascript", "html", "java",
+          "elixir", "heex", "javascript", "html", "java", "python", "go"
         },
         sync_install = false,
         highlight = { enable = true },

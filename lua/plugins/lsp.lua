@@ -22,6 +22,7 @@ return {
                 cpp = { "clang-format" },
                 lua = { "stylua" },
                 java = { "jdtls"},
+                python = { "black", "isort" },
             }
         })
 

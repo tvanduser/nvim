@@ -3,6 +3,9 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+--remaps for going out of insert mode back to normal mode without having to hit esc or crtl+c
+vim.keymap.set("i", "jj", "<Esc>")
+
 -- remaps for telescope fuzzy finder 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })

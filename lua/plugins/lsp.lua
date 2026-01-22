@@ -107,7 +107,7 @@ return {
                             zls = {
                                 enable_inlay_hints = false,
                                 enable_snippets = true,
-                                warn_style = true,
+                                warn_style = false,
                             },
                         },
                     })
@@ -165,7 +165,7 @@ return {
 
         -- Configure diagnostics display
         vim.diagnostic.config({
-            update_in_insert = true,  -- Update diagnostics while typing
+            update_in_insert = false,  -- Update diagnostics while typing
             virtual_text = true,      -- Show errors inline
             signs = true,             -- Show signs in the gutter
             underline = true,         -- Underline problematic code

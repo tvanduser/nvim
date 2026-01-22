@@ -1,8 +1,6 @@
-
 --remaps for global movement around vim
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-
 -- remaps for telescope fuzzy finder 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
@@ -16,12 +14,10 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnos
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 vim.keymap.set('n', '<space>c', ':lclose<CR>', { noremap = true, silent = true, desc = 'Close diagnostics list' })
 
---keybindings for selecting autocomplete items
---<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
---['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
---['<C-y>'] = cmp.mapping.confirm({ select = true }),
---["<C-Space>"] = cmp.mapping.complete(),
+-- ****NEED TO MAKE STUFF FOR AUTOCOMPLETE HERE*****
 
+--remap for going out of insert mode into normal mode
+vim.keymap.set('i', 'jj', '<Esc>')
 
 --keybinds for working with the terminal
 vim.keymap.set('n', '<leader>st', ':vsplit | terminal<CR>', {noremap = true, silent = true}) --opens up a split terminal using SpaceST "split termial ST"
